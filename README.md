@@ -38,18 +38,20 @@ Langkah-langkah penyelesaian TSP
     - setengah perjalanan adalah hasil pencerminan dari setengah rute yang lain, maka dapat dihilangkan dengan dibagi 2
   - Asumsikan node A sebagai simpul awal dan simpul akhir
 
-Psudocode 
+Pseudo code kemungkinan semua rute perjalanan
 ```
 fuction faktorial (n : integer) --> integer
-{ Menghitung n! }
+{ Menghitung (n-1)!/2 }
 Deklarasi
   i : integer
   fak : real
   
 Algoritma :
+n <-- n-1
   fak <-- 1
   for i <-- 1 to n do
     fak <-- fak * 1
   end
+fak/2  
 return fak
 ```

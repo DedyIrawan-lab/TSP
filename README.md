@@ -27,6 +27,7 @@ langkah-langkah penyelesaian TSP
   - Asumsikan node A sebagai simpul awal dan simpul akhir
 
 Psudocode 
+'''
 fuction faktorial (n : integer) --> integer
 { Menghitung n! }
 Deklarasi
@@ -39,3 +40,4 @@ Algoritma :
     fak <-- fak * 1
   end
 return fak
+'''

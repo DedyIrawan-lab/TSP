@@ -7,4 +7,4 @@ Tugas TSP
   - membuat pseudo code dan uji coba 
   - membandingkan dengan algoritma bruce force 
   - membandingkan rute dan waktu perjalanan
-  - menggunakan rederensi paper salsabila ITB
+  - menggunakan referensi paper salsabila ITB

@@ -19,3 +19,9 @@ Kekurangan Algoritma Brute Force
   - Metode brute force jarang menghasilkan algoritma yang mangkus.
   - Beberapa algoritma brute force lambat sehingga tidak dapat diterima.
   - Tidak sekontruktif/sekreatif teknik pemecahan masalah lainnya.
+
+Proposed Algoritma
+  - Asumsikan node A sebagai simpul awal dan simpul akhir
+  - Untuk n buah simpul semua perjalanan dibangkitkan dengan permutasi dari n-1 buah simpul.
+    - permutasi dari n-1 buah simpul adalah (n-1)!
+    - setengah perjalanan adalah hasil pencerminan dari setengah rute yang lain, maka dapat dihilangkan dengan dibagi 2

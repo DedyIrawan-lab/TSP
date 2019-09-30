@@ -22,15 +22,15 @@ Kekurangan Algoritma Brute Force
 
 Hasil TSP menggunakan algoritma brute force dalam bentuk tabel
 
-N       K         Bobot   Rute
------   -------   -----   -----
-4       3
-5       12
-6       60
-7       360
-8       2520
-9       20160
-10      181440
+|N    |K      |Cost   |Rute         |   
+|-----|-------|-------|-------------|
+|4    |3      |       |             |   
+|5    |12     |       |             |   
+|6    |60     |       |             |   
+|7    |360    |       |             |   
+|8    |2520   |       |             |  
+|9    |20160  |       |             |  
+|10   |181440 |       |             |  
 
 Langkah-langkah penyelesaian TSP
   - Untuk n buah simpul semua perjalanan dibangkitkan dengan permutasi dari n-1 buah simpul.

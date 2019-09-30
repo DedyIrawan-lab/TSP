@@ -20,7 +20,19 @@ Kekurangan Algoritma Brute Force
   - Beberapa algoritma brute force lambat sehingga tidak dapat diterima.
   - Tidak sekontruktif/sekreatif teknik pemecahan masalah lainnya.
 
-langkah-langkah penyelesaian TSP
+Hasil TSP menggunakan algoritma brute force dalam bentuk tabel
+
+N       K         Bobot   Rute
+-----   -------   -----   -----
+4       3
+5       12
+6       60
+7       360
+8       2520
+9       20160
+10      181440
+
+Langkah-langkah penyelesaian TSP
   - Untuk n buah simpul semua perjalanan dibangkitkan dengan permutasi dari n-1 buah simpul.
     - permutasi dari n-1 buah simpul adalah (n-1)!
     - setengah perjalanan adalah hasil pencerminan dari setengah rute yang lain, maka dapat dihilangkan dengan dibagi 2

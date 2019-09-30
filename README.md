@@ -24,13 +24,13 @@ Hasil TSP menggunakan algoritma brute force dalam bentuk tabel
 
 |N    |K      |Cost   |Rute                                                 |   
 |-----|-------|-------|-----------------------------------------------------|
-|4    |3      |       |'A', 'B', 'D', 'C', 'A'                              |   
-|5    |12     |       |'A', 'E', 'D', 'C', 'B', 'A'                         |   
-|6    |60     |       |'A', 'F', 'E', 'D', 'C', 'B', 'A'                    |   
-|7    |360    |       |'A', 'E', 'G', 'F', 'D', 'C', 'B', 'A'               |   
-|8    |2520   |       |'A', 'E', 'H', 'G', 'F', 'D', 'C', 'B', 'A'          |  
-|9    |20160  |       |'A', 'I', 'H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'     |  
-|10   |181440 |       |'A', 'J', 'I', 'H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'|  
+|4    |3      |76     |'A', 'B', 'D', 'C', 'A'                              |   
+|5    |12     |85     |'A', 'E', 'D', 'C', 'B', 'A'                         |   
+|6    |60     |105    |'A', 'F', 'E', 'D', 'C', 'B', 'A'                    |   
+|7    |360    |118    |'A', 'E', 'G', 'F', 'D', 'C', 'B', 'A'               |   
+|8    |2520   |154    |'A', 'E', 'H', 'G', 'F', 'D', 'C', 'B', 'A'          |  
+|9    |20160  |180    |'A', 'I', 'H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'     |  
+|10   |181440 |207    |'A', 'J', 'I', 'H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'|  
 
 Langkah-langkah penyelesaian TSP
   - Untuk n buah simpul semua perjalanan dibangkitkan dengan permutasi dari n-1 buah simpul.

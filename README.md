@@ -20,8 +20,22 @@ Kekurangan Algoritma Brute Force
   - Beberapa algoritma brute force lambat sehingga tidak dapat diterima.
   - Tidak sekontruktif/sekreatif teknik pemecahan masalah lainnya.
 
-Proposed Algoritma
-  - Asumsikan node A sebagai simpul awal dan simpul akhir
+langkah-langkah penyelesaian TSP
   - Untuk n buah simpul semua perjalanan dibangkitkan dengan permutasi dari n-1 buah simpul.
     - permutasi dari n-1 buah simpul adalah (n-1)!
     - setengah perjalanan adalah hasil pencerminan dari setengah rute yang lain, maka dapat dihilangkan dengan dibagi 2
+  - Asumsikan node A sebagai simpul awal dan simpul akhir
+
+Psudocode 
+fuction faktorial (n : integer) --> integer
+{ Menghitung n! }
+Deklarasi
+  i : integer
+  fak : real
+  
+Algoritma :
+  fak <-- 1
+  for i <-- 1 to n do
+    fak <-- fak * 1
+  end
+return fak

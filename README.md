@@ -22,15 +22,15 @@ Kekurangan Algoritma Brute Force
 
 Hasil TSP menggunakan algoritma brute force dalam bentuk tabel
 
-|N    |K      |Cost   |Rute         |   
-|-----|-------|-------|-------------|
-|4    |3      |       |             |   
-|5    |12     |       |             |   
-|6    |60     |       |             |   
-|7    |360    |       |             |   
-|8    |2520   |       |             |  
-|9    |20160  |       |             |  
-|10   |181440 |       |             |  
+|N    |K      |Cost   |Rute                                                 |   
+|-----|-------|-------|-----------------------------------------------------|
+|4    |3      |       |'A', 'B', 'D', 'C', 'A'                              |   
+|5    |12     |       |'A', 'E', 'D', 'C', 'B', 'A'                         |   
+|6    |60     |       |'A', 'F', 'E', 'D', 'C', 'B', 'A'                    |   
+|7    |360    |       |'A', 'E', 'G', 'F', 'D', 'C', 'B', 'A'               |   
+|8    |2520   |       |'A', 'E', 'H', 'G', 'F', 'D', 'C', 'B', 'A'          |  
+|9    |20160  |       |'A', 'I', 'H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'     |  
+|10   |181440 |       |'A', 'J', 'I', 'H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'|  
 
 Langkah-langkah penyelesaian TSP
   - Untuk n buah simpul semua perjalanan dibangkitkan dengan permutasi dari n-1 buah simpul.

@@ -65,7 +65,8 @@ Pseudo code hitung cost setiap permutasi
 fungsi kedua (input A : Matriks,
               input n : integer,
               output  : nilai cost minimum)
-{ mencari nilai dengan cost minimum dengan asusmsi node A simpul awal dan akhir dengan cara ambil nilai rata-rata dan link terkecil }
+{ mencari nilai dengan cost minimum dengan asusmsi node A simpul awal dan akhir 
+dengan cara ambil nilai rata-rata dan link terkecil }
 Deklarasi :
   ...
   ...

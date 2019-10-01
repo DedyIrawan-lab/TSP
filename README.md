@@ -32,14 +32,11 @@ Hasil TSP menggunakan algoritma brute force dalam bentuk tabel
 |9    |20160  |135    |'A', 'B', 'C', 'H', 'E', 'G', 'F', 'D', 'I', 'A'     |  
 |10   |181440 |157    |'A', 'B', 'I', 'D', 'C', 'H', 'E', 'G', 'F', 'J', 'A'|  
 
-Langkah-langkah penyelesaian TSP
+Langkah-langkah penyelesaian TSP menggunakan algoritma Brute Force
   1. Untuk n buah simpul semua perjalanan dibangkitkan dengan permutasi dari n-1 buah simpul.
       - permutasi dari n-1 buah simpul adalah (n-1)!
       - setengah perjalanan adalah hasil pencerminan dari setengah rute yang lain, maka dapat dihilangkan dengan dibagi 2
   2. Hitung cost setiap permutasi dan simpan nilai cost minimum
-      - asumsikan node A sebagai simpul awal dan simpul akhir
-      - ambil nilai rata-rata
-      - ambil link terkecil
   3. Kembalikan nilai permutasi dengan cost minimum
       
 Pseudo code kemungkinan semua rute perjalanan
@@ -60,17 +57,7 @@ fak/2
 return fak
 ```
 
-Pseudo code hitung cost setiap permutasi
-```
-fungsi kedua (input A : Matriks,
-              input n : integer,
-              output  : nilai cost minimum)
-{ mencari nilai dengan cost minimum dengan asusmsi node A simpul awal dan akhir 
-dengan cara ambil nilai rata-rata dan link terkecil }
-Deklarasi :
-  ...
-  ...
-Algoritma :
-  ...
-  ...
-```
+Langkah-langkah penyelesaian TSP menggunakan algoritma Dedy Irawan
+  1. Asumsikan node A sebagai simpul awal dan simpul akhir
+  2. Ambil nilai rata-rata
+  3. Ambil link dengan nilai terkecil

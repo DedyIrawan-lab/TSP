@@ -84,19 +84,43 @@ Uji coba 4 buah simpul
 pseudo code
 
 DEKLARASI
-simpul      : array[0...3] of string
-M           : array[0..3, 0..3] of integer
+simpul          : array[0...3] of string
+
+const Nbaris = 4 {Jumlah baris maksimum}
+const Nkolom = 4 {Jumlah kolom maksimum}
+type MatriksInt : array[1.. Nbaris, 1..Nkolom] of integer
+
+procedure ProsesMatriks(input M : MatriksInt, input Nbar, Nkol: integer)
+{ Pemrosesan elemen matriks M[1..Nbar, 1..Nkol] per baris per kolom }
+{ K.Awal  : Matriks M sudah terdenifisi elemen-elemennya }
+{ K.Akhir : Setiap elemen matriks M telah di proses }
+
+DEKLARASI
+  i : integer { indeks baris }
+  j : integer { indeks kolom }
+
+ALGORITMA:
+  for i <-- to Nbar do
+    for j <-- to Nkol do
+      Proses(M[i,j])
+    end for
+  end for
 ```
 
 Traslate ke program C
 
 ```
-Program 4 buah simpul
 
-char simpul [4] = "ABCD"
+#define Nbaris 4
+#define Nkolom 4
+
+typedef int MatriksInt [Nbaris+1] [Nkolom+1];
+MatriksInt M;
 
 int M[4][4] = {0,10,30,31,
                10,0,22,18,
                30,22,0,18,
                31,18,18,0};
+ 
+ char simpul [4] = "ABCD";
  ```

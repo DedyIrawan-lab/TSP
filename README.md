@@ -113,9 +113,19 @@ procedure Proses(input M : MatriksInt, input baris, kolom: integer)
 DEKLARASI
   i : integer { indeks baris }
   j : integer { indeks kolom }
+  baris : integer { nilai baris ke-i }
+  kolom : integer { nilai kolom ke-j }
+  min : integer { nilai minimum }
 
 ALGORITMA:
-  
+  if M[i,j] != 0 && M[i,j] != 99 do
+    if x < min do
+      min <-- x
+      baris <-- i
+      kolom <-- j
+    end if
+  end if
+    
 ```
 
 Traslate ke program C

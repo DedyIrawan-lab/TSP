@@ -78,10 +78,9 @@ Representasi adjacency matrik dalam bahasa C
 | I | 8 | 10 | 19 | 41 | 12 | 47 | 28 | 37 | 34 | 0  | 28 |
 | J | 9 | 21 | 39 | 41 | 30 | 34 | 18 | 48 | 45 | 28 | 0  |
 
-Uji coba 4 buah simpul
+Pseudo Code Uji coba 4 buah simpul
 
 ```
-pseudo code
 
 DEKLARASI
 simpul          : array[0...3] of string
@@ -105,6 +104,18 @@ ALGORITMA:
       Proses(M[i,j])
     end for
   end for
+
+procedure Proses(input M : MatriksInt, input baris, kolom: integer)
+{ Pemrosesan elemen matriks M[1..Nbar, 1..Nkol] per baris per kolom }
+{ K.Awal  : Matriks M sudah terdenifisi elemen-elemennya }
+{ K.Akhir : Setiap elemen matriks M telah di proses }
+
+DEKLARASI
+  i : integer { indeks baris }
+  j : integer { indeks kolom }
+
+ALGORITMA:
+  
 ```
 
 Traslate ke program C

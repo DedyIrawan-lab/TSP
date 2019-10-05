@@ -87,3 +87,16 @@ DEKLARASI
 simpul      : array[0...3] of string
 M           : array[0..3, 0..3] of integer
 ```
+
+Traslate ke program C
+
+```
+Program 4 buah simpul
+
+char simpul [4] = "ABCD"
+
+int M[4][4] = {0,10,30,31,
+               10,0,22,18,
+               30,22,0,18,
+               31,18,18,0};
+ ```

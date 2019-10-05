@@ -61,3 +61,19 @@ Langkah-langkah penyelesaian TSP menggunakan algoritma Dedy Irawan
   1. Asumsikan node A sebagai simpul awal dan simpul akhir
   2. Ambil nilai rata-rata
   3. Ambil link dengan nilai terkecil
+
+Representasi adjacency matrik dalam bahasa C
+
+|   | A  | B  | C  | D  | E  | F  | G  | H  | I  | J  |
+|:-:|----|----|----|----|----|----|----|----|----|----|
+| A | 0  | 10 | 30 | 31 | 20 | 28 | 44 | 43 | 10 | 21 |
+| B | 10 | 0  | 22 | 18 | 40 | 26 | 37 | 39 | 19 | 39 |
+| C | 30 | 22 | 0  | 18 | 26 | 23 | 50 | 18 | 41 | 41 |
+| D | 31 | 18 | 18 | 0  | 15 | 22 | 42 | 20 | 12 | 30 |
+| E | 20 | 40 | 26 | 15 | 0  | 12 | 10 | 15 | 47 | 34 |
+| F | 28 | 26 | 23 | 22 | 12 | 0  | 16 | 33 | 28 | 18 |
+| G | 44 | 37 | 50 | 42 | 10 | 16 | 0  | 31 | 37 | 48 |
+| H | 43 | 39 | 18 | 20 | 15 | 33 | 31 | 0  | 34 | 45 |
+| I | 10 | 19 | 41 | 12 | 47 | 28 | 37 | 34 | 0  | 28 |
+| J | 21 | 39 | 41 | 30 | 34 | 18 | 48 | 45 | 28 | 0  |
+

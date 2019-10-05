@@ -78,7 +78,7 @@ Representasi adjacency matrik dalam bahasa C
 | I | 8 | 10 | 19 | 41 | 12 | 47 | 28 | 37 | 34 | 0  | 28 |
 | J | 9 | 21 | 39 | 41 | 30 | 34 | 18 | 48 | 45 | 28 | 0  |
 
-Pseudo Code Uji coba 4 buah simpul
+Pseudo Code Uji coba 4 buah Simpul
 
 ```
 
@@ -88,22 +88,6 @@ simpul          : array[0...3] of string
 const Nbaris = 4 {Jumlah baris maksimum}
 const Nkolom = 4 {Jumlah kolom maksimum}
 type MatriksInt : array[1.. Nbaris, 1..Nkolom] of integer
-
-procedure ProsesMatriks(input M : MatriksInt, input Nbar, Nkol: integer)
-{ Pemrosesan elemen matriks M[1..Nbar, 1..Nkol] per baris per kolom }
-{ K.Awal  : Matriks M sudah terdenifisi elemen-elemennya }
-{ K.Akhir : Setiap elemen matriks M telah di proses }
-
-DEKLARASI
-  i : integer { indeks baris }
-  j : integer { indeks kolom }
-
-ALGORITMA:
-  for i <-- to Nbar do
-    for j <-- to Nkol do
-      Proses(M[i,j])
-    end for
-  end for
 
 procedure Proses(input M : MatriksInt, input baris, kolom: integer)
 { Pemrosesan elemen matriks M[1..Nbar, 1..Nkol] per baris per kolom }
@@ -115,22 +99,28 @@ DEKLARASI
   j : integer { indeks kolom }
   baris : integer { nilai baris ke-i }
   kolom : integer { nilai kolom ke-j }
-  min : integer { nilai minimum }
+  min : integer { nilai minimum di isi dengan 99 }
 
 ALGORITMA:
-  if M[i,j] != 0 && M[i,j] != 99 do
-    if x < min do
-      min <-- x
-      baris <-- i
-      kolom <-- j
-    end if
-  end if
+  for i <-- to Nbar do
+    for j <-- to Nkol do
+      if M[i,j] != 0 && M[i,j] != 99 do
+        if x < min do
+          min <-- x
+          baris <-- i
+          kolom <-- j
+        end if
+      end if
+    end for
+  end for
     
 ```
 
-Traslate ke program C
+Traslate Program C
 
 ```
+#include <stdio.h>
+#include <stdlib.h>
 
 #define Nbaris 4
 #define Nkolom 4
@@ -144,4 +134,33 @@ int M[4][4] = {0,10,30,31,
                31,18,18,0};
  
  char simpul [4] = "ABCD";
+ 
+int i, j, baris, kolom, min;
+min = 99; // asumsi tidak ada busur yang bobotnya lebih dari 99
+
+for(i=0; i<=3; i++)
+  {
+    for(j=0; j<=3; j++)
+      {
+        if(A[i][j] != 0 && A[i][j] != 99)
+          {
+            if(A[i][j] < min)
+              {
+                min = A[i][j];
+              }
+           }
+       }
+   }
+ printf("\n %i", min);
+ 
+ for(i=0; i<=3; i++)
+  {
+    for(j=0; j<=3; j++)
+      {
+        if(A[i][j] == min;
+          {
+            printf("\n %c %c", simpul[i], simpul[j]);
+           }
+       }
+   }
  ```

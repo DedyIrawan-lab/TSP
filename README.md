@@ -83,37 +83,40 @@ Pseudo Code Uji coba 4 buah Simpul
 ```
 
 DEKLARASI
-simpul          : array[0...3] of string
+simpul  : array[0...3] of string
+A       : array[0..3, 0..3] of integer              
 
-const Nbaris = 4 {Jumlah baris maksimum}
-const Nkolom = 4 {Jumlah kolom maksimum}
-type MatriksInt : array[1.. Nbaris, 1..Nkolom] of integer
-
-procedure Proses(input M : MatriksInt, input baris, kolom: integer)
-{ Pemrosesan elemen matriks M[1..Nbar, 1..Nkol] per baris per kolom }
-{ K.Awal  : Matriks M sudah terdenifisi elemen-elemennya }
-{ K.Akhir : Setiap elemen matriks M telah di proses }
+procedure Proses(input Matriks : A, input baris, kolom: integer)
+{ Pemrosesan elemen matriks A[0..3, 0..3] per baris per kolom }
+{ K.Awal  : Matriks A sudah terdenifisi elemen-elemennya }
+{ K.Akhir : Setiap elemen matriks A telah di proses }
 
 DEKLARASI
   i : integer { indeks baris }
   j : integer { indeks kolom }
-  baris : integer { nilai baris ke-i }
-  kolom : integer { nilai kolom ke-j }
   min : integer { nilai minimum di isi dengan 99 }
 
-ALGORITMA:
-  for i <-- to Nbar do
-    for j <-- to Nkol do
-      if M[i,j] != 0 && M[i,j] != 99 do
-        if x < min do
-          min <-- x
-          baris <-- i
-          kolom <-- j
+ALGORITMA: 
+{ Mencetak semua simpul dengan busur terpendek }
+  for i <-- to 3 do
+    for j <-- to 3 do
+      if A[i,j] != 0 && A[i,j] != 99 do
+        if A[i,j] < min do
+          min <-- A[i,j]
         end if
       end if
     end for
   end for
-    
+
+{ Mencetak hubungan antar simpul }
+  for i <-- to 3 do
+    cetak(simpul baris[i]);
+      for j <-- to 3 do
+        if A[i,j] != 0 && A[i,j] != 99 do
+          cetak(simpul kolom[j]);
+        end if
+      end for
+   end for
 ```
 
 Traslate Program C
@@ -138,6 +141,21 @@ int M[4][4] = {0,10,30,31,
 int i, j, baris, kolom, min;
 min = 99; // asumsi tidak ada busur yang bobotnya lebih dari 99
 
+//Mencetak Hubungan Antar Simpul
+for(i=0; i<=3; i++)
+{
+    printf("\n %c : ", simpul[i]);
+    for(j=0; j<=3; j++)
+    {
+        if(A[i][j] != 0 && A[i][j] != 99)
+        {
+            printf("%c ", simpul[j]);
+        }
+    }
+}
+printf("\n");
+
+//Mencari bobot nilai busur terkecil
 for(i=0; i<=3; i++)
   {
     for(j=0; j<=3; j++)
@@ -153,6 +171,7 @@ for(i=0; i<=3; i++)
    }
  printf("\n %i", min);
  
+ //Mencetak simpul yang memiliki bobot nilai terkecil
  for(i=0; i<=3; i++)
   {
     for(j=0; j<=3; j++)

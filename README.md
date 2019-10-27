@@ -9,6 +9,18 @@ Tugas TSP
   - membandingkan rute dan waktu perjalanan
   - menggunakan referensi paper salsabila ITB
 
+| 0  | 10 | 30 | 31 | 20 | 28 | 44 | 43 | 10 | 21 |
+|----|----|----|----|----|----|----|----|----|----|
+| 10 | 0  | 22 | 18 | 40 | 26 | 37 | 39 | 19 | 39 |
+| 30 | 22 | 0  | 18 | 26 | 23 | 50 | 18 | 41 | 41 |
+| 31 | 18 | 18 | 0  | 15 | 22 | 42 | 20 | 12 | 30 |
+| 20 | 40 | 26 | 15 | 0  | 12 | 10 | 15 | 47 | 34 |
+| 28 | 26 | 23 | 22 | 12 | 0  | 16 | 33 | 28 | 18 |
+| 44 | 37 | 50 | 42 | 10 | 16 | 0  | 31 | 37 | 48 |
+| 43 | 39 | 18 | 20 | 15 | 33 | 31 | 0  | 34 | 45 |
+| 10 | 19 | 41 | 12 | 47 | 28 | 37 | 34 | 0  | 28 |
+| 21 | 39 | 41 | 30 | 34 | 18 | 48 | 45 | 28 | 0  |
+
 Kelebihan Algoritma Brute Force
   - Metode brute force dapat digunakan untuk memecahkan hampir sebagian besar masalah (wide applicability).
   - Metode brute force sederhana dan mudah dimengerti.

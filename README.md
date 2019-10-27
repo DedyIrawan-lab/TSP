@@ -47,13 +47,13 @@ Pseudo code algoritma sasha
 
 Hasil TSP menggunakan algoritma brute force, ant colony, sasha, algoritma sendiri
 
-|N    |K      |Cost   |Rute                                                 |   
-|-----|-------|-------|-----------------------------------------------------|
-|4    |3      |76     |'A', 'B', 'D', 'C', 'A'                              |   
-|5    |12     |85     |'A', 'B', 'C', 'D', 'E', 'A'                         |   
-|6    |60     |101    |'A', 'B', 'D', 'C', 'F', 'E', 'A'                    |   
-|7    |360    |115    |'A', 'B', 'D', 'C', 'F', 'G', 'E', 'A'               |   
-|8    |2520   |133    |'A', 'B', 'D', 'C', 'H', 'E', 'G', 'F', 'A'          |  
-|9    |20160  |135    |'A', 'B', 'C', 'H', 'E', 'G', 'F', 'D', 'I', 'A'     |  
-|10   |181440 |157    |'A', 'B', 'I', 'D', 'C', 'H', 'E', 'G', 'F', 'J', 'A'|  
-      
+| Jumlah Node | Minimum Value | Minimum Value | Minimum Value | Minimum Value |
+|-------------|---------------|---------------|---------------|---------------|
+|             | Brute Force   | Ant Colony    | Sasha         | Algoritma     |
+| 4           | 76            | 76            | #error#       | #empty#       |
+| 5           | 85            | 85            | #error#       | #empty#       |
+| 6           | 101           | 104           | #error#       | #empty#       |
+| 7           | 115           | 118           | #error#       | #empty#       |
+| 8           | 133           | 133           | #error#       | #empty#       |
+| 9           | 135           | 135           | #error#       | #empty#       |
+| 10          | 157           | 157           | #error#       | #empty#       |

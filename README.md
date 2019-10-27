@@ -3,11 +3,13 @@
 Travelling Salesman Problem adalah sebuah masalah untuk menentukan rute terpendek dan tercepat dari node awal ke node tujuan dan kembali ke node awal.
 
 Tugas TSP
-  - menentukan algoritma untuk mencari rute terpendek dengan kasus matrik 10x10
-  - membuat pseudo code dan uji coba 
-  - membandingkan dengan algoritma brute force 
-  - membandingkan rute dan waktu perjalanan
-  - menggunakan referensi paper salsabila ITB
+  - membuat matrik 10x10 secara random
+  - membuat pseudo code / algoritma 
+  - membuat program dari pseudo code menggunakan bahasa pemogramman 
+  - membandingkan hasil program dengan program ant colony, brute force, dan program sasha 
+  - menggunakan referensi paper dan tesis sasha
+
+Bentuk matrik 10x10
 
 | 0  | 10 | 30 | 31 | 20 | 28 | 44 | 43 | 10 | 21 |
 |----|----|----|----|----|----|----|----|----|----|
@@ -21,18 +23,29 @@ Tugas TSP
 | 10 | 19 | 41 | 12 | 47 | 28 | 37 | 34 | 0  | 28 |
 | 21 | 39 | 41 | 30 | 34 | 18 | 48 | 45 | 28 | 0  |
 
-Kelebihan Algoritma Brute Force
-  - Metode brute force dapat digunakan untuk memecahkan hampir sebagian besar masalah (wide applicability).
-  - Metode brute force sederhana dan mudah dimengerti.
-  - Metode brute force menghasilkan algoritma yang layak untuk beberapa masalah penting seperti pencarian, pengurutan, pencocokan string, perkalian matriks.
-  - Metode brute force menghasilkan algoritma baku (standard) untuk tugas-tugas komputasi seperti penjumlahan/perkalian n buah bilangan, menentukan elemen minimum atau maksimum di dalam tabel (list).
+Pseudo code algortitma yang dibuat
+  1. Asumsikan node A sebagai simpul awal dan simpul akhir
+  2. Ambil nilai rata-rata
+  3. Ambil link dengan nilai terkecil
 
-Kekurangan Algoritma Brute Force
-  - Metode brute force jarang menghasilkan algoritma yang mangkus.
-  - Beberapa algoritma brute force lambat sehingga tidak dapat diterima.
-  - Tidak sekontruktif/sekreatif teknik pemecahan masalah lainnya.
+Pseudo code algoritma brute force
+  1. Untuk n buah simpul semua perjalanan dibangkitkan dengan permutasi dari n-1 buah simpul.
+      - permutasi dari n-1 buah simpul adalah (n-1)!
+      - setengah perjalanan adalah hasil pencerminan dari setengah rute yang lain, maka dapat dihilangkan dengan dibagi 2
+  2. Hitung cost setiap permutasi dan simpan nilai cost minimum
+  3. Kembalikan nilai permutasi dengan cost minimum
+  
+Pseudo code algoritma ant colony
+  ...
+  ...
+  ...
 
-Hasil TSP menggunakan algoritma brute force dalam bentuk tabel
+Pseudo code algoritma sasha
+  ...
+  ...
+  ...
+
+Hasil TSP menggunakan algoritma brute force, ant colony, sasha, algoritma sendiri
 
 |N    |K      |Cost   |Rute                                                 |   
 |-----|-------|-------|-----------------------------------------------------|
@@ -43,33 +56,4 @@ Hasil TSP menggunakan algoritma brute force dalam bentuk tabel
 |8    |2520   |133    |'A', 'B', 'D', 'C', 'H', 'E', 'G', 'F', 'A'          |  
 |9    |20160  |135    |'A', 'B', 'C', 'H', 'E', 'G', 'F', 'D', 'I', 'A'     |  
 |10   |181440 |157    |'A', 'B', 'I', 'D', 'C', 'H', 'E', 'G', 'F', 'J', 'A'|  
-
-Langkah-langkah penyelesaian TSP menggunakan algoritma Brute Force
-  1. Untuk n buah simpul semua perjalanan dibangkitkan dengan permutasi dari n-1 buah simpul.
-      - permutasi dari n-1 buah simpul adalah (n-1)!
-      - setengah perjalanan adalah hasil pencerminan dari setengah rute yang lain, maka dapat dihilangkan dengan dibagi 2
-  2. Hitung cost setiap permutasi dan simpan nilai cost minimum
-  3. Kembalikan nilai permutasi dengan cost minimum
       
-Pseudo code kemungkinan semua rute perjalanan
-```
-fungsi pertama (n : integer) --> integer
-{ Menghitung (n-1)!/2 }
-Deklarasi :
-  i : integer
-  fak : real
-  
-Algoritma :
-n <-- n-1
-  fak <-- 1
-  for i <-- 1 to n do
-    fak <-- fak * 1
-  end
-fak/2  
-return fak
-```
-
-Langkah-langkah penyelesaian TSP menggunakan algoritma Dedy Irawan
-  1. Asumsikan node A sebagai simpul awal dan simpul akhir
-  2. Ambil nilai rata-rata
-  3. Ambil link dengan nilai terkecil

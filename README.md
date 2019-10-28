@@ -57,3 +57,16 @@ Hasil TSP menggunakan algoritma brute force, ant colony, sasha, algoritma sendir
 | 8           | 133           | 133           | #error#       | #empty#       |
 | 9           | 135           | 135           | #error#       | #empty#       |
 | 10          | 157           | 157           | #error#       | #empty#       |
+
+Pola rute
+
+| Node | Pola Rute             |                       |       |      |
+|------|-----------------------|-----------------------|-------|------|
+|      | Brute Force           | Ant Colony            | Shasa | Dedy |
+| 4    | A,B,C,D,A             | D,B,A,C,D             |       |      |
+| 5    | A,B,C,D,E,A           | B,A,E,D,C,B           |       |      |
+| 6    | A,B,D,C,F,E,A         | E,F,D,C,B,A,E         |       |      |
+| 7    | A,B,D,C,F,G,E,A       | E,G,F,D,C,B,A,E       |       |      |
+| 8    | A,B,D,C,H,E,G,F,A     | F,G,E,H,C,D,B,A,F     |       |      |
+| 9    | A,B,C,H,E,G,F,D,I,A   | H,E,G,F,D,I,A,B,C,H   |       |      |
+| 10   | A,B,I,D,C,H,E,G,F,J,A | C,H,E,G,F,J,A,B,I,D,C |       |      |

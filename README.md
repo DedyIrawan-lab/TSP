@@ -47,26 +47,26 @@ Pseudo code algoritma sasha
 
 Hasil TSP menggunakan algoritma brute force, ant colony, sasha, algoritma sendiri
 
-| Jumlah Node | Minimum Value | Minimum Value | Minimum Value | Minimum Value |
-|-------------|---------------|---------------|---------------|---------------|
-|             | Brute Force   | Ant Colony    | Sasha         | Algoritma     |
-| 4           | 76            | 76            | #error#       | #empty#       |
-| 5           | 85            | 85            | #error#       | #empty#       |
-| 6           | 101           | 104           | #error#       | #empty#       |
-| 7           | 115           | 118           | #error#       | #empty#       |
-| 8           | 133           | 133           | #error#       | #empty#       |
-| 9           | 135           | 135           | #error#       | #empty#       |
-| 10          | 157           | 157           | #error#       | #empty#       |
+| Jumlah Node | Minimum Value | Minimum Value | Minimum Value  | Minimum Value |
+|-------------|---------------|---------------|----------------|---------------|
+|             | Brute Force   | Ant Colony    | Algoritma Sasha| Algoritma Dedy|
+| 4           | 76            | 76            | #error#        | #empty#       |
+| 5           | 85            | 85            | #error#        | #empty#       |
+| 6           | 101           | 104           | #error#        | #empty#       |
+| 7           | 115           | 118           | #error#        | #empty#       |
+| 8           | 133           | 133           | #error#        | #empty#       |
+| 9           | 135           | 135           | #error#        | #empty#       |
+| 10          | 157           | 157           | #error#        | #empty#       |
 
 Pola rute
 
-| Node | Pola Rute             |                       |       |      |
-|------|-----------------------|-----------------------|-------|------|
-|      | Brute Force           | Ant Colony            | Shasa | Dedy |
-| 4    | A,B,C,D,A             | D,B,A,C,D             |       |      |
-| 5    | A,B,C,D,E,A           | B,A,E,D,C,B           |       |      |
-| 6    | A,B,D,C,F,E,A         | E,F,D,C,B,A,E         |       |      |
-| 7    | A,B,D,C,F,G,E,A       | E,G,F,D,C,B,A,E       |       |      |
-| 8    | A,B,D,C,H,E,G,F,A     | F,G,E,H,C,D,B,A,F     |       |      |
-| 9    | A,B,C,H,E,G,F,D,I,A   | H,E,G,F,D,I,A,B,C,H   |       |      |
-| 10   | A,B,I,D,C,H,E,G,F,J,A | C,H,E,G,F,J,A,B,I,D,C |       |      |
+| Node | Pola Rute             |                       |                |                |
+|------|-----------------------|-----------------------|----------------|----------------|
+|      | Brute Force           | Ant Colony            | Algoritma Shasa| Algoritma Dedy |
+| 4    | A,B,C,D,A             | D,B,A,C,D             | #error#        | #empty#        |
+| 5    | A,B,C,D,E,A           | B,A,E,D,C,B           | #error#        | #empty#        |
+| 6    | A,B,D,C,F,E,A         | E,F,D,C,B,A,E         | #error#        | #empty#        |
+| 7    | A,B,D,C,F,G,E,A       | E,G,F,D,C,B,A,E       | #error#        | #empty#        |
+| 8    | A,B,D,C,H,E,G,F,A     | F,G,E,H,C,D,B,A,F     | #error#        | #empty#        |
+| 9    | A,B,C,H,E,G,F,D,I,A   | H,E,G,F,D,I,A,B,C,H   | #error#        | #empty#        |
+| 10   | A,B,I,D,C,H,E,G,F,J,A | C,H,E,G,F,J,A,B,I,D,C | #error#        | #empty#        |
